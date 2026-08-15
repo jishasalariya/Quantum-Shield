@@ -1,0 +1,10 @@
+{
+  "file": "java_rsa_keygen.java",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "keygen",
+      "line_range": [4, 4]
+    }
+  ]
+}

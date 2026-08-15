@@ -1,0 +1,20 @@
+{
+  "file": "external_vuln_005.java",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "signature",
+      "line_range": [157, 157]
+    },
+    {
+      "algorithm": "RSA",
+      "type": "signature",
+      "line_range": [209, 209]
+    },
+    {
+      "algorithm": "RSA",
+      "type": "signature",
+      "line_range": [302, 302]
+    }
+  ]
+}

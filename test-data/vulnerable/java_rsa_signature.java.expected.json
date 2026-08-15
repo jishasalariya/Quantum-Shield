@@ -1,0 +1,10 @@
+{
+  "file": "java_rsa_signature.java",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "signature",
+      "line_range": [4, 4]
+    }
+  ]
+}

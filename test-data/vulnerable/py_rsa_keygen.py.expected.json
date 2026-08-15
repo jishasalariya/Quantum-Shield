@@ -1,0 +1,10 @@
+{
+  "file": "py_rsa_keygen.py",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "keygen",
+      "line_range": [3, 6]
+    }
+  ]
+}

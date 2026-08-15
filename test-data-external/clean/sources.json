@@ -1,0 +1,74 @@
+[
+  {
+    "file": "external_clean_002.py",
+    "source_repo": "https://github.com/sybrenstuvel/python-rsa",
+    "source_path": "rsa/asn1.py",
+    "commit_hash": "42b0e14ffbeeb9d99d1037e6440a2cc61780e4ea",
+    "retrieved_via": "git clone",
+    "license": "Apache-2.0"
+  },
+  {
+    "file": "external_clean_003.py",
+    "source_repo": "https://github.com/Legrandin/pycryptodome",
+    "source_path": "lib/Crypto/Util/Padding.py",
+    "commit_hash": "a1e52c70302a51077e9d6a20a6abc6a04da1b5e6",
+    "retrieved_via": "git clone",
+    "license": "BSD-2-Clause"
+  },
+  {
+    "file": "external_clean_004.py",
+    "source_repo": "https://github.com/Legrandin/pycryptodome",
+    "source_path": "lib/Crypto/Util/py3compat.py",
+    "commit_hash": "a1e52c70302a51077e9d6a20a6abc6a04da1b5e6",
+    "retrieved_via": "git clone",
+    "license": "BSD-2-Clause"
+  },
+  {
+    "file": "external_clean_005.java",
+    "source_repo": "https://github.com/auth0/java-jwt",
+    "source_path": "lib/src/main/java/com/auth0/jwt/impl/BasicHeader.java",
+    "commit_hash": "8920eedfe6be0d6650c9959c7e9df6d272cffada",
+    "retrieved_via": "git clone",
+    "license": "MIT"
+  },
+  {
+    "file": "external_clean_006.java",
+    "source_repo": "https://github.com/auth0/java-jwt",
+    "source_path": "lib/src/main/java/com/auth0/jwt/impl/ClaimsHolder.java",
+    "commit_hash": "8920eedfe6be0d6650c9959c7e9df6d272cffada",
+    "retrieved_via": "git clone",
+    "license": "MIT"
+  },
+  {
+    "file": "external_clean_007.cpp",
+    "source_repo": "https://github.com/libssh2/libssh2",
+    "source_path": "src/sftp.c",
+    "commit_hash": "bbb84be704ad1cb683e4fe0c5706058f22896d9f",
+    "retrieved_via": "git clone",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "file": "external_clean_008.cpp",
+    "source_repo": "https://github.com/libssh2/libssh2",
+    "source_path": "src/misc.c",
+    "commit_hash": "bbb84be704ad1cb683e4fe0c5706058f22896d9f",
+    "retrieved_via": "git clone",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "file": "external_clean_009.cpp",
+    "source_repo": "https://github.com/libssh2/libssh2",
+    "source_path": "src/channel.c",
+    "commit_hash": "bbb84be704ad1cb683e4fe0c5706058f22896d9f",
+    "retrieved_via": "git clone",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "file": "external_clean_010.cpp",
+    "source_repo": "https://github.com/libssh2/libssh2",
+    "source_path": "src/comp.c",
+    "commit_hash": "bbb84be704ad1cb683e4fe0c5706058f22896d9f",
+    "retrieved_via": "git clone",
+    "license": "BSD-3-Clause"
+  }
+]

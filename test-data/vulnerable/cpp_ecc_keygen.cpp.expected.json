@@ -1,0 +1,15 @@
+{
+  "file": "cpp_ecc_keygen.cpp",
+  "expected_findings": [
+    {
+      "algorithm": "ECC/ECDSA",
+      "type": "import",
+      "line_range": [1, 1]
+    },
+    {
+      "algorithm": "ECC/ECDSA",
+      "type": "keygen",
+      "line_range": [3, 3]
+    }
+  ]
+}

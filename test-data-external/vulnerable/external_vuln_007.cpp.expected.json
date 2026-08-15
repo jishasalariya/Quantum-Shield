@@ -1,0 +1,10 @@
+{
+  "file": "external_vuln_007.cpp",
+  "expected_findings": [
+    {
+      "algorithm": "ECC/ECDSA",
+      "type": "keygen",
+      "line_range": [717, 717]
+    }
+  ]
+}

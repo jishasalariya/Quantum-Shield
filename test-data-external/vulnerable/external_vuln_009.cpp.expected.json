@@ -1,0 +1,4 @@
+{
+  "file": "external_vuln_009.cpp",
+  "expected_findings": []
+}

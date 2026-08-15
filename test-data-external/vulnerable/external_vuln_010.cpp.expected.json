@@ -1,0 +1,10 @@
+{
+  "file": "external_vuln_010.cpp",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "import",
+      "line_range": [88, 88]
+    }
+  ]
+}

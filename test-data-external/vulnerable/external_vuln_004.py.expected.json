@@ -1,0 +1,4 @@
+{
+  "file": "external_vuln_004.py",
+  "expected_findings": []
+}

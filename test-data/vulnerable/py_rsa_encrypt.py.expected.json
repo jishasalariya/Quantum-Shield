@@ -1,0 +1,15 @@
+{
+  "file": "py_rsa_encrypt.py",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "keygen",
+      "line_range": [2, 2]
+    },
+    {
+      "algorithm": "RSA",
+      "type": "encryption",
+      "line_range": [4, 4]
+    }
+  ]
+}

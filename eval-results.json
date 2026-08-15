@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-08-15T16:06:09.844Z",
+  "metrics": {
+    "overall_accuracy": 100,
+    "overall_fpr": 0,
+    "trap_fpr": 0,
+    "correctly_flagged_vulnerabilities": 16,
+    "total_expected_vulnerabilities": 16,
+    "clean_files_incorrectly_flagged": 0,
+    "total_clean_files": 11,
+    "trap_files_incorrectly_flagged": 0,
+    "total_trap_files": 6
+  },
+  "languages": {
+    "python": {
+      "totalExpected": 8,
+      "detected": 8,
+      "totalClean": 5,
+      "fp": 0
+    },
+    "java": {
+      "totalExpected": 3,
+      "detected": 3,
+      "totalClean": 3,
+      "fp": 0
+    },
+    "cpp": {
+      "totalExpected": 5,
+      "detected": 5,
+      "totalClean": 3,
+      "fp": 0
+    }
+  },
+  "failures": []
+}

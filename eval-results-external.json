@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-08-15T16:08:39.851Z",
+  "metrics": {
+    "overall_accuracy": 62.5,
+    "overall_fpr": 0,
+    "trap_fpr": 0,
+    "correctly_flagged_vulnerabilities": 5,
+    "total_expected_vulnerabilities": 8,
+    "clean_files_incorrectly_flagged": 0,
+    "total_clean_files": 9,
+    "trap_files_incorrectly_flagged": 0,
+    "total_trap_files": 0
+  },
+  "languages": {
+    "python": {
+      "totalExpected": 3,
+      "detected": 3,
+      "totalClean": 3,
+      "fp": 0
+    },
+    "java": {
+      "totalExpected": 3,
+      "detected": 0,
+      "totalClean": 2,
+      "fp": 0
+    },
+    "cpp": {
+      "totalExpected": 2,
+      "detected": 2,
+      "totalClean": 4,
+      "fp": 0
+    }
+  },
+  "failures": [
+    {
+      "file": "external_vuln_005.java",
+      "type": "miss",
+      "details": "Missed expected finding: Algorithm=RSA, Type=signature, Expected Line Range=[157, 157]"
+    },
+    {
+      "file": "external_vuln_005.java",
+      "type": "miss",
+      "details": "Missed expected finding: Algorithm=RSA, Type=signature, Expected Line Range=[209, 209]"
+    },
+    {
+      "file": "external_vuln_005.java",
+      "type": "miss",
+      "details": "Missed expected finding: Algorithm=RSA, Type=signature, Expected Line Range=[302, 302]"
+    }
+  ]
+}

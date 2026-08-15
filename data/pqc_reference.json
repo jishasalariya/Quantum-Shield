@@ -1,0 +1,83 @@
+{
+  "fips_203": {
+    "standard": "FIPS 203",
+    "name": "ML-KEM (Module-Lattice-Based Key-Encapsulation Mechanism)",
+    "description": "Standardized key encapsulation mechanism designed to secure key agreement over public networks. Directly replaces classic key exchange algorithms like RSA key transport, Diffie-Hellman (DH), and Elliptic Curve Diffie-Hellman (ECDH).",
+    "parameters": [
+      {
+        "parameter_set": "ML-KEM-512",
+        "security_level": "Category 1 (AES-128 equivalent)",
+        "intended_use": "Replacing classic keys with security equivalent to RSA-2048 or ECC P-256. Intended for basic low-overhead security environments."
+      },
+      {
+        "parameter_set": "ML-KEM-768",
+        "security_level": "Category 3 (AES-192 equivalent)",
+        "intended_use": "Standard recommended parameter set for general-purpose encryption. Replaces ECC P-256 or P-384, or RSA-3072, providing a robust balance of performance and security."
+      },
+      {
+        "parameter_set": "ML-KEM-1024",
+        "security_level": "Category 5 (AES-256 equivalent)",
+        "intended_use": "High-security requirements. Replaces RSA-4096 or ECC P-521. Recommended for maximum long-term security."
+      }
+    ],
+    "library_usage": {
+      "python": "Use `liboqs` via `liboqs-python` package. Initialize KEM client using OQS: `kem = oqs.KeyEncapsulation('ML-KEM-768')` to generate keys or encapsulate.",
+      "java": "Use `org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider`. Initialize key generator with standard `KeyPairGenerator.getInstance(\"ML-KEM\", \"BCPQC\")` and specify `MLKEMParameterSpec.ml_kem_768`.",
+      "cpp": "Use `liboqs` C API or `liboqs-cpp` wrapper. Example: `oqs::KeyEncapsulation kem(\"ML-KEM-768\");` or standard OpenSSL 3.x PQC provider with `EVP_PKEY_keygen` using target curve ID."
+    }
+  },
+  "fips_204": {
+    "standard": "FIPS 204",
+    "name": "ML-DSA (Module-Lattice-Based Digital Signature Algorithm)",
+    "description": "Primary standard for post-quantum digital signatures. Replaces RSA signing (RSASSA-PKCS1-v1_5, RSASSA-PSS) and Elliptic Curve Digital Signature Algorithm (ECDSA/Ed25519).",
+    "parameters": [
+      {
+        "parameter_set": "ML-DSA-44",
+        "security_level": "Category 1 (AES-128 equivalent)",
+        "intended_use": "Basic security. Replaces RSA-2048 signing."
+      },
+      {
+        "parameter_set": "ML-DSA-65",
+        "security_level": "Category 3 (AES-192 equivalent)",
+        "intended_use": "Recommended standard parameter set for general-purpose digital signatures. Replaces ECDSA P-256/P-384 and RSA-3072."
+      },
+      {
+        "parameter_set": "ML-DSA-87",
+        "security_level": "Category 5 (AES-256 equivalent)",
+        "intended_use": "Maximum security applications. Replaces RSA-4096 and ECDSA P-521."
+      }
+    ],
+    "library_usage": {
+      "python": "Use `liboqs` via `liboqs-python`. Example: `sig = oqs.Signature('ML-DSA-65')` to sign or verify messages.",
+      "java": "Use Bouncy Castle PQC provider. Example: `KeyPairGenerator.getInstance(\"ML-DSA\", \"BCPQC\")` configured with `MLDSAParameterSpec.ml_dsa_65`.",
+      "cpp": "Use `liboqs` C API or `liboqs-cpp` wrapper: `oqs::Signature sig(\"ML-DSA-65\");` or OpenSSL 3.x PQC provider."
+    }
+  },
+  "fips_205": {
+    "standard": "FIPS 205",
+    "name": "SLH-DSA (Stateless Hash-Based Digital Signature Algorithm)",
+    "description": "Fallback stateless hash-based digital signature algorithm. It is slower and produces larger signatures than ML-DSA, but relies on standard cryptographic hash functions (SHA-2 or SHAKE) instead of lattice assumptions, acting as a stateless backup.",
+    "parameters": [
+      {
+        "parameter_set": "SLH-DSA-sha2-128s / SLH-DSA-shake-128s",
+        "security_level": "Category 1 (AES-128 equivalent)",
+        "intended_use": "Alternative signature scheme where lattice security is a concern. Replaces RSA-2048."
+      },
+      {
+        "parameter_set": "SLH-DSA-sha2-192s / SLH-DSA-shake-192s",
+        "security_level": "Category 3 (AES-192 equivalent)",
+        "intended_use": "Standard recommended stateless hash signature set. Replaces ECDSA P-256."
+      },
+      {
+        "parameter_set": "SLH-DSA-sha2-256s / SLH-DSA-shake-256s",
+        "security_level": "Category 5 (AES-256 equivalent)",
+        "intended_use": "Maximum security stateless hash signature."
+      }
+    ],
+    "library_usage": {
+      "python": "Use `liboqs` via `liboqs-python`. Example: `sig = oqs.Signature('sphincs-sha2-128s')` (sphincs matches SLH-DSA standard specifications).",
+      "java": "Use Bouncy Castle PQC provider. Example: `KeyPairGenerator.getInstance(\"SLH-DSA\", \"BCPQC\")` configured with `SLHDSAParameterSpec.slh_dsa_sha2_128s`.",
+      "cpp": "Use `liboqs` C API or wrapper: `oqs::Signature sig(\"sphincs-sha2-128s\");`."
+    }
+  }
+}

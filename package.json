@@ -1,0 +1,32 @@
+{
+  "name": "quantum-shield",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "node scripts/copy-wasm.js",
+    "dev": "next dev",
+    "build": "node scripts/copy-wasm.js && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "eval:accuracy": "tsx scripts/evaluate-accuracy.ts --dataset=test-data",
+    "eval:accuracy:external": "tsx scripts/evaluate-accuracy.ts --dataset=test-data-external"
+  },
+  "dependencies": {
+    "@google/genai": "^2.17.1",
+    "@react-pdf/renderer": "^4.6.1",
+    "@repomix/tree-sitter-wasms": "^0.1.17",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "web-tree-sitter": "^0.26.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.1",
+    "tsx": "^4.23.12",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "file": "cpp_openssl_dh.cpp",
+  "expected_findings": [
+    {
+      "algorithm": "DH/DiffieHellman",
+      "type": "import",
+      "line_range": [1, 1]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "file": "py_ecdsa_sign.py",
+  "expected_findings": [
+    {
+      "algorithm": "ECDSA",
+      "type": "keygen",
+      "line_range": [2, 2]
+    },
+    {
+      "algorithm": "ECDSA",
+      "type": "signature",
+      "line_range": [4, 4]
+    }
+  ]
+}

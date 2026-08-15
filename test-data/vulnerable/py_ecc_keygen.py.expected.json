@@ -1,0 +1,10 @@
+{
+  "file": "py_ecc_keygen.py",
+  "expected_findings": [
+    {
+      "algorithm": "ECC",
+      "type": "keygen",
+      "line_range": [2, 2]
+    }
+  ]
+}

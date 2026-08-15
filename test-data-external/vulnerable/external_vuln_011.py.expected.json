@@ -1,0 +1,10 @@
+{
+  "file": "external_vuln_011.py",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "import",
+      "line_range": [20, 20]
+    }
+  ]
+}

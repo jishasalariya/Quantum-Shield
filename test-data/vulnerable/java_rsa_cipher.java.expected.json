@@ -1,0 +1,10 @@
+{
+  "file": "java_rsa_cipher.java",
+  "expected_findings": [
+    {
+      "algorithm": "RSA",
+      "type": "encryption",
+      "line_range": [4, 4]
+    }
+  ]
+}
